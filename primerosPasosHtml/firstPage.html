@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Dentro de esta etiqueta van los matadatos de la página
+    lo que va dentro de la etiqueta no se muestra porque solo es para metadatos  -->
+    <title> Mi primera web </title>
+    <!-- En  etiqueta va el titulo de la web  -->
+
+</head>
+
+<body>
+    <!-- Lo que va en el body si se muestra  -->
+    <h1>
+        Titulo de mi web
+    </h1>
+    <!-- La etiqueta H1 solo debe de haber uno en toda la web -->
+    <h2>
+        Bienvenidos a mi web
+    </h2>
+    <!-- El h2 si puede haber más de uno -->
+
+    <h3>Aca va el otro texto del titulo </h3>
+    <hr>
+    <h3> Titulo de los textos </h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit delectus quia, hic enim consectetur
+        <strong> suscipit voluptatum inventore </strong> maxime? Nam tenetur ad, ipsum soluta vitae aliquid aut fugiat dolorem.
+    </p>
+    <hr>
+    <h3>Titulo de las imagenes</h3>
+
+    <img alt="Imagen de prueba" title="Imagen de la prueba" src="../Imagenes/2.jpg" width="250px" />
+    <!-- El atributo alt es bueno para parte de seo y ayuda al usuario cuando la aconexion es mala -->
+    <hr>
+    <h3>Formualrios </h3>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="nombre" placeholder="Ingresa el nombre" />
+
+        <label for="descripcion"> Descripcion</label>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+
+        <input type="radio" name="genero" value="Hombre"> Hombre
+
+        <input type="radio" name="genero" value="mujer"> Mujer
+
+        <input type="radio" name="genero" value="nada"> Nada
+
+        <select name="genero2">
+            <option value="hombre" > Hombre </option>
+            <option value="mujer" > Mujer </option>
+            <option value="nada" > Nada  </option>
+        </select>
+
+        <input type="submit" value="Enviar" />
+    </form>
+    <!-- De esta form se manejan los formularios -->
+</body>
+
+</html>
