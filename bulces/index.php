@@ -86,8 +86,57 @@ $resultado = 0;
 
 for( $i = 0; $i <= 100; $i++ ){
     $resultado += $i;
+    // Acá iría la setencia para ver cada uno de los valores en que va la iteracion
 }
 
 echo"<h1> $resultado </h1>";
+
+
+echo '<hr/>';
+
+echo '<h2>EJERCICIOS TABLAS DE MULTIPLICAR</h2>';
+
+// Inicio de la tabla
+
+echo '<table border=1><thead>';
+
+for( $cabecera = 1; $cabecera <= 10; $cabecera++ ){
+    echo "<td>TABLA DEL $cabecera</td>";
+}
+
+echo '</thead>';
+
+
+echo '<tr>';
+
+    for($i =1; $i <= 10; $i++){
+        echo "<td>";
+        for($x=1; $x<=10; $x++){
+            echo "$i x $x =".($i*$x)."<br>";
+        }
+        echo   "</td>";
+    }
+
+echo '</tr>';
+
+
+echo '</table>';
+
+
+
+echo '<hr/>';
+
+
+echo "<h2>NUMEROS PARES </h2>";
+
+
+
+for($contadores=0; $contadores<=100; $contadores++){
+    if( ($contadores%2) != 0 ){
+        echo "$contadores".'<br>';
+    }else {
+        echo 'Numeros pares<br>';
+    }
+} 
 
 ?>
