@@ -50,18 +50,56 @@ select nombre, apellidos from usuarios where id in (select usuario_id from entra
 	Con ategorias de mas de 3 entradas
 */
 
-select nombre from categorias where (select count(categoria_id) from entradas group by categoria_id) >= 3;
+
+-- select count(categoria_id), categoria_id from entradas group by categoria_id >= 3; 
+
+
+
+-- select nombre from categorias where id in (select categoria_id from entradas group by categoria_id having count(categoria_id));
+
 
 /*
 	Entradas que se hayan hecho los martes de la semana que sea
 */
+
+select *  from usuarios where id in (select usuario_id from entradas where dayofweek(fecha) = 3  );
+
+insert into entradas values (null, 2, 2, 'Juagndo con sql', 'nos devuelva los usuarios que crearon esntradas un día de la semana', curdate());
 
 /*
 	Mostrar el nombre del usuario que tenga más entrdas 
 
 */
 
+
+-- select count(id), usuario_id from entradas group by usuario_id order by count(id) desc limit 1;
+
+-- select nombre from usuarios where id = (select usuario_id from entradas group by usuario_id order by count(id) desc limit 1);
+
+-- Este nos devuelve nombre y el apellido 
+
 /*
 	Categorias sin entradas
 
 */
+
+
+select count(categoria_id), categoria_id from entradas group by categoria_id; 
+
+
+/*
+	Nos devuelve el nombre de las categorias que tiene más de tres entradas o más de 3 
+*/
+
+select categoria_id from entradas group by categoria_id  having  count(categoria_id) >= 3;
+
+/*
+	Devuelve id de las ategorias que tienen más de tres entradas 
+*/
+
+
+select * from categorias where id not in (select categoria_id  from entradas );
+
+insert into categorias values (null, 'Plataformas');
+
+select * from categorias;
