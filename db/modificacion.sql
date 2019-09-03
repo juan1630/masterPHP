@@ -7,7 +7,7 @@ MODIFICACIO DE LAS TABLAS
 	RENOMBRAR UNA TABLA 
 */
 
-alter table usuarios rename to usuariosRenombrados;
+-- alter table usuarios rename to usuariosRenombrados;
 
 show tables;
 
@@ -16,16 +16,17 @@ show tables;
     Se cambia el nombre de la columa 
 */
 
-alter table usuariosRenombrados change apellidos apellido varchar(100) null;
+-- alter table usuariosRenombrados change apellidos apellido varchar(100) null;
 
-desc usuariosRenombrados;
+-- desc usuariosRenombrados;
+
 
 /*
 	modificar columna sin cambiar el nombre de la tabla
 */
 
 
-alter table usuariosRenombrados modify apellido varchar(50) not null;
+-- alter table usuariosRenombrados modify apellido varchar(50) not null;
 
 /*
 AGREGAR UNA NUEVA COLUMNA
@@ -37,7 +38,9 @@ alter table usuariosRenombrados add website varchar(100) not null;
 /*
 	Con la intruccio add se le agrega una nueva columna a la tabla 
 */
-desc usuariosRenombrados;
+
+-- desc usuariosRenombrados;
+
 
 /* Añador una restriccion a la columna  */
 
