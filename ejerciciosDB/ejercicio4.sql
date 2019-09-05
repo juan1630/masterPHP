@@ -87,3 +87,15 @@ select avg(sueldo), grupo_id from vendedores group by grupo_id;
 
 
 --  
+
+
+-- EJERCICIO NÚMERO 14
+
+/*
+	Visualizar las unidades totales vendidas de cada coche  a cada cliente, mostrando el nombre del producto, número de cliente 
+    y la suma de las unidades
+*/
+
+select * from encargos;
+
+select c.modelo, cli.nombre, sum(cantidad) from encargos as e inner join coches c on c.id = c.coche_id inner join clientes cli on cli.id = e.cliente_id; 
