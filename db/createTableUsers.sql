@@ -7,16 +7,16 @@ use blogmaster;
 */
 
 
-CREATE TABLE usuarios(
-	id int(11) auto_increment not null,
-    nombre varchar(100) not null,
-    apellidos varchar(100) not null,
-    email varchar(255) not null,
-    passwordd varchar(255) not null,
-    fecha date not null,
-    CONSTRAINT pk_usuarios PRIMARY KEY (id),
-    constraint uq_email unique(email)
-) engine=InnoDB;
+-- CREATE TABLE usuarios(
+-- 	id int(11) auto_increment not null,
+--     nombre varchar(100) not null,
+--     apellidos varchar(100) not null,
+--     email varchar(255) not null,
+--     passwordd varchar(255) not null,
+--     fecha date not null,
+--     CONSTRAINT pk_usuarios PRIMARY KEY (id),
+--     constraint uq_email unique(email)
+-- ) engine=InnoDB;
 
 /*	 
 	CONSTRAINT pk_usuarios
@@ -29,24 +29,24 @@ CREATE TABLE usuarios(
 	primero crear las tablas que no tiene relación
 */
 
-CREATE TABLE categorias(
-id int(255) auto_increment not null,
-nombre varchar(100),
-CONSTRAINT pk_categorias PRIMARY KEY(id)
-)engine=InnoDB;
+-- CREATE TABLE categorias(
+-- id int(255) auto_increment not null,
+-- nombre varchar(100),
+-- CONSTRAINT pk_categorias PRIMARY KEY(id)
+-- )engine=InnoDB;
 
 
-CREATE TABLE entradas(
-id int(255) auto_increment not null,
-usuario_id int(255),
-categoria_id int(255),
-titulo varchar(255),
-descripcion mediumtext,
-fecha date not null,
-CONSTRAINT pk_entradas primary key(id),
-constraint fk_entrada_usuarios foreign key(usuario_id) references usuarios (id),
-constraint fk_entrada_categoria foreign key(categoria_id) references categorias (id) on delete cascade
-)engine=InnoDB;
+-- CREATE TABLE entradas(
+-- id int(255) auto_increment not null,
+-- usuario_id int(255),
+-- categoria_id int(255),
+-- titulo varchar(255),
+-- descripcion mediumtext,
+-- fecha date not null,
+-- CONSTRAINT pk_entradas primary key(id),
+-- constraint fk_entrada_usuarios foreign key(usuario_id) references usuarios (id),
+-- constraint fk_entrada_categoria foreign key(categoria_id) references categorias (id) on delete cascade
+-- )engine=InnoDB;
 
 
 /*
@@ -78,4 +78,4 @@ constraint fk_entrada_categoria foreign key(categoria_id) references categorias 
 no haga nada 
 */
 
-show tables;
+-- show tables;

@@ -6,19 +6,20 @@
 	Mostrar los clientes con el mayor número de pedidos y mostrar cuantos hicieron
 */
 
-show databases;
+-- show databases;
 
 
-use concesionario;
+-- use concesionario;
 
-select * from encargos;
+-- select * from encargos;
 
 
 /*
 	De esta forma se cuenta el número de los pedidos 
 */
 
-select c.nombre, cliente_id, count(e.id) from encargos as e inner join clientes as c on c.id = e.cliente_id  group by cliente_id  order by  2 desc limit 2;
+
+-- select c.nombre, cliente_id, count(e.id) from encargos as e inner join clientes as c on c.id = e.cliente_id  group by cliente_id  order by  2 desc limit 2;
 
 
 

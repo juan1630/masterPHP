@@ -1,0 +1,58 @@
+/* Traer la funete que se haya descargado */
+
+
+/* Estilos generales  */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+/* Estamos haciendo el reset CSS */
+
+body {
+    background-color: #f4f4f4;
+    /* background: url(ruta de la imagen); */
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+
+/* Elimina los floats */
+
+
+/* Estilos de la cabecera */
+
+#header {
+    width: 70%;
+    height: auto;
+    background: transparent;
+    margin: o auto;
+    border: 1px solid black;
+}
+
+#logo {
+    float: left;
+    width: 540px;
+    height: 140px;
+}
+
+#logo a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #2979CD;
+    text-shadow: 0 0 0 black, 1px 1px 0 1px black, 2px, 2px, 0px, black;
+    transition: all 500ms
+}
+
+#logo a:hover {
+    cursor: pointer;
+    text-shadow: 0 0 0 black, -1px -1px 0 -1px black, -2px, -2px, 0px, black;
+}

@@ -1,0 +1,9 @@
+1.- La maquetación del sitio web
+2.- Hacer el registro de usuario en el side bar 
+3.- Hacer el login de los usuarios 
+4.-Página de edicion de los datos de los usuarios 
+5.- Creacion de las entradas de los suarios 
+6.- Sección de creación de entradas  para usuario identificados 
+7.- Listar entradas en la página de inicio 
+8.- Poder borrar las entardas 
+9.- Añadir buscador de entradas web
