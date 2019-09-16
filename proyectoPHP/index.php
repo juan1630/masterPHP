@@ -1,115 +1,55 @@
-<!DOCTYPE HTML>
-<html lang="es">
-    <head>
-        <meta charset="utf-8"/>
-        <title> Blog  </title>
-        <link rel="stylesheet" type="text/css" href="./assets/css/estilos.css" />
-    </head>
-    <body>
-        <!-- Cabecera -->
-    <header id="header">
-         <div id="logo">
-            <a href="index.php"> Blog </a>
-         </div>
-
-         <!-- MENU -->
-        <nav id="nav">
-            <ul>
-                <li> <a href="index.php"> Inicio </a></li>
-                <li> <a href="index.php"> Categoria 1 </a></li>
-                <li> <a href="index.php"> Categoria 2 </a></li>
-                <li> <a href="index.php"> Categoria 3 </a></li>
-                <li> <a href="index.php"> Categoria 4 </a></li>
-                <li> <a href="index.php"> Contacto </a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-        <div id="contenedor">
-
-                <!--  SIDEBAR  -->
-
-        <aside id="sidebar" >
-            <div id="login" class="bloque">
-                <h3>Indetificate</h3>
-                <form method="post" action="login.php">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placholder="Ingresa tu email"/>
-
-                    <label for="pass">Contraseña:</label>
-                    <input type="password" name="password" placholder="Ingresa tu constrasela"/>
-
-                    <input type="submit" value="Enviar"/>
-                </form>
-            </div>
-
-            <div id="registro" class="bloque">
-                <h3>Registrate</h3>
-                <form method="post" action="registro.php">
-
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placholder="Ingresa tu email"/>
-
-                    <label for="pass">Contraseña:</label>
-                    <input type="password" name="password" placholder="Ingresa tu constrasela"/>
+<?php  require_once 'includes/header.php';  ?>
 
 
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" placholder="Ingresa tu nombre"/>
+<!-- El sessionStart se hereda de la cabecera en este index -->
 
+      
+<?php   require_once 'includes/sidebar.php'; ?>
 
-                    <label for="apellido">Apellidos:</label>
-                    <input type="text" name="apellido" placholder="Ingresa tu apellido"/>
-
-
-                    
-                    <input type="submit" value="Registar"/>
-                </form>
-            </div>
-         </aside>
-
-                    <!-- CAJA PRICIPAL -->
-             <div id="principal" >  
+         <!-- CAJA PRICIPAL -->
+        
+         <div id="principal" >  
                 <h1>Ultimas entradas</h1>
 
-                <article class="entrada" >
+        <article class="entrada" >
                     <h2> titutlo de la entrada </h2>
                     <p> Descripcion de la entrada </p>
-                </article>
+        </article>
 
-
-                <article class="entrada" >
-                    <h2> titutlo de la entrada </h2>
-                    <p> Descripcion de la entrada </p>
-                </article>
-
-
-
-                <article class="entrada" >
-                    <h2> titutlo de la entrada </h2>
-                    <p> Descripcion de la entrada </p>
+        <article class="entrada" >
+                    <a href="">
+                        <h2> titutlo de la entrada </h2>
+                        <p> Descripcion de la entrada </p>
+                    </a>
                 </article>
 
 
 
                 <article class="entrada" >
-                    <h2> titutlo de la entrada </h2>
-                    <p> Descripcion de la entrada </p>
+                <a href="">
+                        <h2> titutlo de la entrada </h2>
+                        <p> Descripcion de la entrada </p>
+                    </a>
                 </article>
 
-             
+
+
+                <article class="entrada" >
+                <a href="">
+                        <h2> titutlo de la entrada </h2>
+                        <p> Descripcion de la entrada </p>
+                    </a>
+                </article>
+
+                <div id="ver-todas" > 
+                 <a href=""> Ver todas las entradas  </a>
+             </div>
              </div>
 
-        </div>
+             
 
+             <?php  require_once 'includes/footer.php';   ?>
 
-
-        <!-- PIE DE PÁGINA -->
-
-        <footer id="pie">
-                <p> Desarrollado por José Patrón &copy; 2019 </p>
-        </footer>
     
     </body>
 </html>
